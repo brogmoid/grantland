@@ -1,26 +1,34 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Grantland</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          GRANT McDANIEL <a href="/posts/first-post"> | COMPUTER PERSON</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Professional nerd leveling up to the cloud. <code><a href="https://github.com/brogmoid">https://github.com/brogmoid</a></code>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/images/garntface.png" className="card">
+            <h3>My face is like &rarr;</h3>
+            <Image
+  src="/images/garntface.png" // Route of the image file
+  height={454} // Desired size with correct aspect ratio
+  width={400} // Desired size with correct aspect ratio
+  alt="Your Name"
+/>
+            <p>(pre-pandemic maskless look)</p>
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
